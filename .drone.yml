@@ -1,0 +1,10 @@
+pipeline:
+
+  code_inspection:
+    image: python:3.6
+    commands:
+      - pip3 install -q pylama==7.4.3 yapf
+      - pylama --skip '*/tests/*,*/configs/*,*/aiocqlengine/models.py'
+      - yapf -dr . | (! grep '.')
+    when:
+      event: push
