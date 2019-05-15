@@ -15,4 +15,4 @@ python manage.py runserver
 有两种方式：
 
 1. curl -s -X PUT http://couchdb:5984/_node/nonode@nohost/_config/admins/develop -d '"devpwd"'
-2. 使用管理界面： http://<docker machine ip>:5984/_utils/#addAdmin/nonode@nohost
+2. 使用管理界面： http://<docker machine ip>:5984/_utils/#addAdmin/nonode@nohost 使用配置里的用户名和密码
