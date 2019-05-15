@@ -12,7 +12,6 @@ from sanic.views import HTTPMethodView
 from views.serializers import RequestFormSchema
 from views.utils import CreateView, failed_response, ok_response
 
-# jiaja2 配置
 env = Environment(
     loader=PackageLoader('views.routers', '../templates'),
     autoescape=select_autoescape(['html', 'xml', 'tpl']))
